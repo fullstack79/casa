@@ -12,7 +12,7 @@ body,.ContenedorPadre {
     width: 1270px;
     height: 360px;
     background:#FFF;
-    background-image:url('../Img/tablas.jpg');
+    background-image:url('./tablas.jpg');
     background-size: cover;
     background-position: center;
     padding: 10px 20px; /* Espaciado interno en los botones */
