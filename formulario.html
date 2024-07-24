@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de solicitud de servicio para desarrollo web</title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+        }
+        button {
+            padding: 0.5rem;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function sendEmail() {
+            var email = "Prodideprofesional@gmail.com";
+            var subject = "Solicitud de servicio sobre Desarrollo web";
+            var body = "Hola, tengo una solicitud de servicio para:" +
+                    "%0ADirección: " +
+                    document.getElementById('direccion').value +
+                    "%0ATeléfono: " +
+                    document.getElementById('telefono').value +
+                    "%0ANombre Completo: " +
+                    document.getElementById('nombre_completo').value +
+                    "%0ACédula: " +
+                    document.getElementById('cedula').value;
+
+            window.location.href = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        }
+    </script>
+</head>
+<body>
+
+    <form onsubmit="sendEmail(); return false;">
+        <h2>FORMULARIO DE SOLICITUD DE SERVICIO PARA DESARROLLO WEB</h2>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" required>
+
+        <label for="nombre_completo">Nombre Completo:</label>
+        <input type="text" id="nombre_completo" name="nombre_completo" required>
+
+        <label for="cedula">Cédula:</label>
+        <input type="text" id="cedula" name="cedula" required>
+
+        <button type="submit">Enviar Solicitud</button>
+        
+        <p>En unos momentos estaremos comunicándonos con usted.</p>
+    </form>
+
+</body>
+</html>
