@@ -28,10 +28,13 @@ A continuación, se detallan los componentes y cómo utilizar el sitio.
   - `flechaDerecha2.png`: Imagen alternativa de flecha derecha.
   - `flechaIzquierda.png`: Imagen de flecha izquierda para navegación del carrusel.
   - `flechaIzquierda2.png`: Imagen alternativa de flecha izquierda.
+  - `Tablas.png`: imagen de fondo portada.
+   - `CASA DE ORACION SUR.PNG`: ICONO.
 
 - 
 
 **Páginas HTML:**
+  - `index.html`: Página principal --Home.
   - `consejeria.html`: Página de consejería.
   - `contacto.html`: Página de contacto.
   - `estudiosBiblicos.html`: Página de estudios bíblicos.
