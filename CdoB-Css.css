@@ -12,7 +12,7 @@ body,.ContenedorPadre {
     width: 1270px;
     height: 360px;
     background:#FFF;
-    background-image:url('./tablas.jpg');
+    background-image:url('../Img/tablas.jpg');
     background-size: cover;
     background-position: center;
     padding: 10px 20px; /* Espaciado interno en los botones */
@@ -116,7 +116,6 @@ h5{
 
   div.footer-V,
   div.footer-P,
-  div.footer-F,
   div.footer-EB,
   div.footer-C,
   div.footer-J{
@@ -707,8 +706,8 @@ body {
 
 .video-thumb-img {
 	display: block;
-	height: 150px;
-	width: 200px;
+	height:70%;
+	width: auto;
 	object-fit: cover;
 	transform: translateX(-38.5px) translateY(-40px);
 	-webkit-user-select: none !important;
